@@ -2,7 +2,7 @@ def scenario1():
     print("test")
 
 def scenario2():
-    pass
+    print("test")
 
 def scenario3():
     pass
@@ -23,7 +23,4 @@ def scenario8():
     pass
 
 def scenario9():
-    pass
-
-def scenario10():
     pass

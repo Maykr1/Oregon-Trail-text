@@ -14,11 +14,18 @@ class Character:
 
 def startGame():
     print("You set out on March 20th, 1857 on the Oregon Trail. Your destination is Oregon City. Your characters {} and {} must survive the grueling path.".format(char1.name, char2.name))
+    
     while char1.health > 0 and char2.health > 0:
-        #ranNum = random.randint(1, 10)
-        ranNum = 1
-        if ranNum == 1:
+        direction = input("You are face with three paths, left, right, and forward. Which way do you go?")
+        if input.lower() == 'left':
             scenario1()
+        if input.lower() == 'right':
+            scenario2()
+        if input.lower() == 'forward':
+            scenario3()
+
+    if not char1.health > 0 or not char2.health > 0:
+        print("Oh no, someone died :(")
 
 if __name__ == '__main__':
     menu = input("""Hello and Welcome to the Oregon Trail Game!
